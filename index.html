@@ -7,17 +7,16 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>My University</title>
 
     <style>
       body {
         margin: 0;
         font-family: 'Segoe UI', Arial, sans-serif;
-        background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+        background: linear-gradient(135deg, #e3eeff 0%, #f3e7e9 100%);
         color: #222;
       }
       .navbar {
@@ -31,10 +30,6 @@
         border-radius: 0 0 20px 20px;
         margin-bottom: 2rem;
         animation: fadeInDown 1s;
-      }
-      @keyframes fadeInDown {
-        from { opacity: 0; transform: translateY(-30px);}
-        to { opacity: 1; transform: translateY(0);}
       }
       .navbar i {
         font-size: 2rem;
@@ -54,22 +49,12 @@
         transition: color 0.3s;
         position: relative;
       }
-      .navbar a::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: #fff;
-        transition: width 0.3s;
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        }
       .navbar a:hover {
         color: #ffd700;
       }
-      .navbar a:hover::after {
-        width: 100%;
+      @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-30px);}
+        to { opacity: 1; transform: translateY(0);}
       }
 
       .showcases {
@@ -89,15 +74,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-         animation: fadeInUp 1s;
+        animation: fadeInUp 1s;
+        position: relative;
       }
       .showcases > div:hover {
         transform: translateY(-10px) scale(1.03);
         box-shadow: 0 8px 32px rgba(168, 75, 231, 0.18);
-      }
-      @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(30px);}
-        to { opacity: 1; transform: translateY(0);}
       }
       .showcases img {
         width: 100%;
@@ -110,12 +92,16 @@
         font-size: 1rem;
         color: #444;
       }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px);}
+        to { opacity: 1; transform: translateY(0);}
+      }
 
       .contact {
         max-width: 400px;
         margin: 2rem auto;
         background: #fff;
-         border-radius: 16px;
+        border-radius: 16px;
         box-shadow: 0 4px 24px rgba(168, 75, 231, 0.12);
         padding: 2rem;
         animation: fadeInUp 1.2s;
@@ -141,7 +127,7 @@
       .contact input:focus,
       .contact textarea:focus {
         border-color: #ffd700;
-         }
+      }
       .contact textarea {
         resize: vertical;
         min-height: 80px;
@@ -166,7 +152,7 @@
         color: #fff;
         border-radius: 20px 20px 0 0;
         margin-top: 2rem;
-         font-size: 1rem;
+        font-size: 1rem;
         letter-spacing: 1px;
         box-shadow: 0 -2px 8px rgba(168, 75, 231, 0.1);
         animation: fadeInUp 1.5s;
@@ -183,46 +169,40 @@
     <div class="navbar">
       <i class="fa-solid fa-building-columns"></i>
       <h1>My University</h1>
-
-      <a href="https://www.google.com/"> Google</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="service.html">Services</a>
     </div>
 
-    <div 
-    class="showcases">
-        <div>
-            <img src="https://picsum.photos/200/300" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, corrupti maiores, quibusdam eaque iusto eos, voluptatum soluta nemo qui deserunt nostrum repellendus! Explicabo iste, soluta fugiat obcaecati consequatur voluptas distinctio!</p>
-            
-        </div>
-        <div>
-            <img src="https://picsum.photos/200/300" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, facere! Ipsam quidem dignissimos culpa dolores laborum velit nostrum neque debitis ratione voluptatibus in eius cum eaque aperiam, fuga id nobis?</p>
-            
-        </div>
-        <div>
-            <img src="https://picsum.photos/200/300" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, explicabo. Ipsa dolore ipsam cumque accusamus sed doloremque, labore laboriosam nisi magni autem voluptates ut totam odio animi incidunt, doloribus unde.</p>
-            
-        </div>
-        
+    <div class="showcases">
+      <div>
+        <img src="https://picsum.photos/200/300" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, corrupti maiores, quibusdam eaque iusto eos, voluptatum soluta nemo qui deserunt nostrum repellendus! Explicabo iste, soluta fugiat obcaecati consequatur voluptas distinctio!</p>
+      </div>
+      <div>
+        <img src="https://picsum.photos/200/300" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, facere! Ipsam quidem dignissimos culpa dolores laborum velit nostrum neque debitis ratione voluptatibus in eius cum eaque aperiam, fuga id nobis?</p>
+      </div>
+      <div>
+        <img src="https://picsum.photos/200/300" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, explicabo. Ipsa dolore ipsam cumque accusamus sed doloremque, labore laboriosam nisi magni autem voluptates ut totam odio animi incidunt, doloribus unde.</p>
+      </div>
     </div>
 
     <div class="contact">
-        <form action="">
-            <label for="">Name</label>
-            <input type="text" name="name" id="name" placeholder="your name">
-            <label for="">Email</label>
-            <input type="email" name="mail" id="mail" placeholder="your mail">
-            <label for="">Message</label>
-            <textarea name="message" id="message" placeholder="your message"></textarea>
-            <input type="submit" value="Envoyer">
-        </form>
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="your name">
+        <label for="mail">Email</label>
+        <input type="email" name="mail" id="mail" placeholder="your mail">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="your message"></textarea>
+        <input type="submit" value="Envoyer">
+      </form>
     </div>
 
     <div class="footer">
-        <p>All Rights Resevrse @copys 2023;</p>
+      <p>All Rights Reserved &copy; 2023</p>
     </div>
   </body>
 </html>

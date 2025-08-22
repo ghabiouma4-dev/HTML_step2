@@ -133,8 +133,69 @@
       box-shadow: 0 -2px 8px rgba(168, 75, 231, 0.1);
       animation: fadeInUp 1.5s;
     }
+    .showcases {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .showcases div {
+      max-width: 400px;
+      margin: 1rem;
+      text-align: center;
+    }
+    .showcases img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(168, 75, 231, 0.2);
+    }
+    .contact {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(168, 75, 231, 0.12);
+      animation: fadeInUp 1.5s;
+    }
+    .contact label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #222;
+      font-weight: 500;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+    .contact input:focus, .contact textarea:focus {
+      border-color: #a84be7;
+      outline: none;
+    }
+    .contact input[type="submit"] {
+      background: #a84be7;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      padding: 0.8rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .contact input[type="submit"]:hover {
+      background: #9b4fd7;
+    }
     @media (max-width: 900px) {
       .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .showcases {
         flex-direction: column;
         align-items: center;
       }
@@ -142,7 +203,52 @@
   </style>
 </head>
 <body>
-    <h2>this is about page</h2>
-    <a href="index.html">Go Home</a>
+  <div class="navbar">
+    <i class="fa-solid fa-building-columns"></i>
+    <h1>My University</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+  </div>
+
+  <div class="showcases">
+    <div>
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Campus">
+      <p>
+        <strong>Our Story:</strong><br>
+        Founded in 1990, My University has grown into a vibrant academic community. We are dedicated to excellence in teaching, research, and student life.
+      </p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Mission">
+      <p>
+        <strong>Our Mission:</strong><br>
+        Empower students to reach their full potential through innovative programs, supportive faculty, and a welcoming campus environment.
+      </p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1517520287167-4bbf64a00d66?auto=format&fit=crop&w=400&q=80" alt="Values">
+      <p>
+        <strong>Our Values:</strong><br>
+        Integrity, diversity, collaboration, and lifelong learning are at the heart of everything we do.
+      </p>
+    </div>
+  </div>
+
+  <div class="contact">
+    <form action="">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="your name">
+      <label for="mail">Email</label>
+      <input type="email" name="mail" id="mail" placeholder="your mail">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="your message"></textarea>
+      <input type="submit" value="Envoyer">
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>All Rights Reserved &copy; 2023</p>
+  </div>
 </body>
 </html>
